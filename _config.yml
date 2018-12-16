@@ -32,7 +32,7 @@ title-img: "/img/logo.png"
 
 navbar-col: "#343a40"
 navbar-text-col: "#FFFFFF"
-navbar-children-col: "#0085A1"
+navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
