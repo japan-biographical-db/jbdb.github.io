@@ -12,13 +12,13 @@ This user guide is intended to be used by project contributors (scholars, resear
 
 While the __Database__ section therefore focuses on adding, editing, and deleting data, the __Visualization Suite__ describes in detail the analytical potential of the data via means of network visualizations. It addresses the current functionality and the different ways networks can be generated and, non-destructively,<sup name="a2">[2](#f2)</sup> manipulated.
 
-This page will be continuously updated to reflect the latest changes and functionalities that the JBDB and its associated web application provide. If you have any questions or suggestions, or if you notice any bugs, you are welcome to contact me under the following mail address: <support@japanese-history.org>. You will also find it in the footer of this page.
+This site will be continuously updated to reflect the latest changes and functionalities that the JBDB and its associated web application provide. If you have any questions or suggestions, or if you notice any bugs, you are welcome to contact me under the following e-mail address: <support@japanese-history.org>. Along with the link to the GitHub repository of this site, you will also find it in the footer.
 
 Heidelberg, December 2018<br>
 Leo Born 
 
 ---
 
-<b id="f1">1.</b> _open_ means that this user guide is hosted on [GitHub](https://github.com) and that, thus, the page development (revisions, corrections, additions etc.) can be transparently tracked.[↩](#a1)
+<b id="f1">1.</b> _open_ means that this user guide is hosted on [GitHub](https://github.com/japan-biographical-db/japan-biographical-db.github.io) and that, thus, the page development (revisions, corrections, additions etc.) can be transparently tracked.[↩](#a1)
 
 <b id="f2">2.</b> When manipulating the networks, e.g. highlighting or hiding persons based on certain attributes, the data itself is at all times not altered, but only the display of it (i.e. what the user sees).[↩](#a2)

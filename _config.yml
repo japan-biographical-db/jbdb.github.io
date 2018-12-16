@@ -54,7 +54,7 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   email: "support@japanese-history.org"
-  github: japan-biographical-db
+  github: japan-biographical-db/japan-biographical-db.github.io
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
