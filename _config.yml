@@ -26,8 +26,8 @@ navbar-links:
   About: "about"
   Database:
     - Persons: "http://deanattali.com/beautiful-jekyll/"
-    – Events: "s"
-    – Sources: ""
+    - Events: "s"
+    - Sources: ""
   Visualization Suite: ""
   Project home: "https://network-studies.org/#!/"
 
