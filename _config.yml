@@ -5,7 +5,7 @@ url: "https://japan-biographical-db.github.io"
 baseurl: ""
 
 # Name of website
-title: Japan Biographical DB – A User's Guide
+title: Japan Biographical DB
 
 # Short description of your site
 description: The official user guide for the JBDB
@@ -20,8 +20,6 @@ navbar-links:
     - Sources: "sources"
   Visualization Suite: "vissuite"
   Project home: "https://network-studies.org/#!/"
-
-#avatar: "/img/lady_and_hikyaku.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -55,19 +53,6 @@ author:
 social-network-links:
   email: "support@japanese-history.org"
   github: japan-biographical-db/japan-biographical-db.github.io
-#  reddit: yourname
-#  google-plus: +DeanAttali
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
 
 # Select which share links to show in posts
 share-links-active:
