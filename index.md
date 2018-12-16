@@ -8,7 +8,7 @@ This site contains the official, open<sup name="a1">[1](#f1)</sup> user guide fo
 
 [comment]: # (Maybe at some point add a page specifying the technical details of the application and everything else?)
 
-This user guide is intended to be used by project contributors (research assistants, students, scholars) and normal users alike. It is currently divided into two larger parts: __Database__ and __Visualization Suite__ (see navigation bar at the top). Whereas the former is mainly of concern for project contributors since the actions described require user-restricted and account-based access, the latter is of interest for both user groups. The __Database__ section is furthermore divided into three parts: __Persons__, __Events__, and __Sources__, one for each editable data entry category.
+This user guide is intended to be used by project contributors (scholars, research assistants, students) and normal users alike. It is currently divided into two larger parts: __Database__ and __Visualization Suite__ (see navigation bar at the top). Whereas the former is mainly of concern for project contributors since the actions described require user-restricted and account-based access, the latter is of interest for both user groups. The __Database__ section is furthermore divided into three parts: __Persons__, __Events__, and __Sources__, one for each editable data entry category.
 
 While the __Database__ section therefore focuses on adding, editing, and deleting data, the __Visualization Suite__ describes in detail the analytical potential of the data via means of network visualizations. It addresses the current functionality and the different ways networks can be generated and, non-destructively,<sup name="a2">[2](#f2)</sup> manipulated.
 
