@@ -5,22 +5,23 @@ url: "https://japan-biographical-db.github.io"
 baseurl: ""
 
 # Name of website
-title: Japan Biographical DB – Manual
+title: Japan Biographical DB – A User's Guide
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: The official user guide for the JBDB
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About: "about"
   Database:
     - Persons: "persons"
     - Events: "events"
     - Sources: "sources"
   Visualization Suite: "vissuite"
   Project home: "https://network-studies.org/#!/"
+
+#avatar: "/img/lady_and_hikyaku.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
