@@ -16,7 +16,7 @@ While the __Database__ section therefore focuses on adding, editing, and deletin
 The user guide is accessible at all times from the application. In the header, there is a book sign next to the menu button on the right-hand side:
 
 <p class="text-center">
-<img width="200px" src="../img/user-guide-btn.png">
+<img width="200px" src="https://japan-biographical-db.github.io/img/user-guide-btn.png">
 </p>
 
 Clicking on this symbol will either open up a specific page of the user guide (depending on where you are) or the front page (this page). Note that currently only logged-in users have access to this feature as the user guide is still work-in-progress.
