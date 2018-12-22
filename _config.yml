@@ -18,7 +18,9 @@ navbar-links:
     - Persons: "persons"
     - Events: "events"
     - Sources: "sources"
-  Visualization Suite: "vissuite"
+  Visualization Suite:
+    - Settings: "vissettings"
+    - Visualizations: "visualizations"
   Project home: "https://network-studies.org/#!/"
 
 # If you want to have an image logo in the top-left corner instead of the title text,

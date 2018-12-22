@@ -1,21 +1,20 @@
 ---
 layout: page
 title: Visualization Suite
+subtitle: Settings
 ---
 
 # Contents
 
-1. [Settings](#settings)
-  * [Who to visualize?](#who-to-visualize)
-  * [What to visualize?](#what-to-visualize)
-  * [How to visualize?](#how-to-visualize)
-2. [Visualizations](#visualizations)
+1. [Who to visualize?](#who-to-visualize)
+2. [What to visualize?](#what-to-visualize)
+3. [How to visualize?](#how-to-visualize)
 
 <br>
 
-## Settings<a name="settings"></a>
+## Intro
 
-This section covers the functionality of the [visualization suite of the JBDB](https://network-studies.org/#!/vissuite/front) and the different ways these visualizations can be generated. When entering this view, you will be presented with the following settings page:
+This page covers the functionality of the [visualization suite of the JBDB](https://network-studies.org/#!/vissuite/front) and the different ways these visualizations can be generated. When entering this view, you will be presented with the following settings page:
 
 ![Vissettings](../img/vissettings.png)
 
@@ -23,7 +22,7 @@ Broadly speaking, there are three important sections to the settings view: the f
 
 This section is therefore structured in a way to reflect these three broad questions.
 
-### Who to visualize?<a name="who-to-visualize"></a>
+## Who to visualize?<a name="who-to-visualize"></a>
 
 The first settings section allows you to select the persons to base the visualizations on in five different ways:
 
@@ -52,13 +51,11 @@ Using this dropdown results in a seed person set of all persons in the DB matchi
 As above, starting from these gathered persons, all connected persons are extracted from the DB and thus the final visualization would include the gathered persons and their connected persons.<sup id="a2">[2](#f2)</sup>
 
 
-### What to visualize?<a name="what-to-visualize"></a>
+## What to visualize?<a name="what-to-visualize"></a>
 
 The next settings section is concerned with the underlying data that connections should be based on.
 
-### How to visualize?<a name="how-to-visualize"></a>
-
-## Visualizations<a name="visualizations"></a>
+## How to visualize?<a name="how-to-visualize"></a>
 
 
 ---

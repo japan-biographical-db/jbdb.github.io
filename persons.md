@@ -1,6 +1,7 @@
 ---
 layout: page
-title: JBDB – Persons
+title: JBDB
+subtitle: Persons
 ---
 
 # Contents
