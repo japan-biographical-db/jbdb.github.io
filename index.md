@@ -23,7 +23,7 @@ Clicking on this symbol will either open up a specific page of the user guide (d
 
 This site will be continuously updated to reflect the latest changes and functionalities that the JBDB and its associated web application provide. If you have any questions or suggestions, or if you notice any bugs, you are welcome to contact me under the following e-mail address: <support@japanese-history.org>. Along with the link to the GitHub repository of this site, you will also find it in the footer.
 
-Heidelberg, December 2018<br>
+Heidelberg, August 2019<br>
 Leo Born 
 
 ---
