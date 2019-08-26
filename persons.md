@@ -41,17 +41,21 @@ Other means of searching for persons include filtering by family name only, stat
 
 ![Quickfilter](../img/quickfilter.png)
 
-Enabling search by family name results in matching entries only if the search query appears at the beginning of a name since Japanese names are written in the format LASTNAMEFIRSTNAME (in romaji it is LASTNAME FIRSTNAME). As is obvious, this is only a crude approximation for matching family names and does not work for European names, for example.
+Searching by family name only becomes accessible once a name has been searched for. Enabling search by family name results in matching entries only if the search query appears at the beginning of a name since Japanese names are written in the format LASTNAMEFIRSTNAME (in romaji it is LASTNAME FIRSTNAME). As is obvious, this is only a crude approximation for matching family names and does not work for European names, for example.
 
-Filtering by status or era works by simply selecting the corresponding category you want to have matched from the dropdown. These filters work in conjunction with the search query, so, for example, you can specifically ask for all persons matching "田中" who were scholars. As mentioned, however, filtering by either status or era disables the matching of alternative names.
+Filtering by status or era works by simply selecting the corresponding category you want to have matched from the dropdown. These filters work in conjunction with the search query, so, for example, you can specifically ask for all persons matching "田中" who were warriors. As mentioned, however, filtering by either status or era disables the matching of alternative names.
 
 Additionally, you can set the conjunction parameter __AND__ for the status and era categories. If you select values other than "全部 All" for both of them, you can choose to either keep the default search constraint of having to match both status _and_ era, or to loosen the constraint by allowing to return persons matching either status _or_ era.<sup id="a1">[1](#f1)</sup>
 
 Lastly, note that currently the era selection only considers if either the birth or death date matches the era. It is planned for the future that this operation recognizes whether a person _lived_ during the queried era as well.
 
+You can also just choose to display person entries you created. Currently, this does not account for entries you _modified_ as the assumption is that most users are only able to edit their own entries.
+
+The button "Advanced Search" yields a prototype of a separate search UI that is not implemented well yet (see important notice below).
+
 ### Important notice
 
-Apart from the improvement mentioned in the previous section, we are currently working on a complete overhaul of the search functionality. In the future, searching capabilities will be closely resemble those currently found in the visualization suite (discussed [here](./vissettings.md)). This will include fine-grained search by status, occupation, location etc. *plus* a combination of multiple attributes via __AND__ and __OR__ operators.
+Apart from the improvements mentioned in the previous section, we are currently working on a complete overhaul of the search functionality. In the future, searching capabilities will be closely resemble those currently found in the visualization suite (discussed [here](./vissettings.md)). This will include fine-grained search by status, occupation, location etc. *plus* a combination of multiple attributes via __AND__ and __OR__ operators. This enhanced search capability will likely result in dropping the quickfilter in favor of direct access to an "Advanced Search" view.
 
 ## Adding a new person<a name="adding-a-person"></a>
 
@@ -72,6 +76,8 @@ You will notice that the view defaults to the tab "Basic information" and that t
 Before we turn our attention to the kinship and non-kinship relations, however, let us complete the remaining basic information.
 
 ### Basic information<a name="basic-information"></a>
+
+#### Names
 
 After entering the person's main name in kanji, furigana, and romaji, you can proceed to enter additional names that person was known by. Simply click on the "Add other names" button and the following modal window will appear:
 
@@ -100,13 +106,129 @@ The table allows you to remove or edit any alternative name. By clicking on an u
 
 Once you are done, you can either click the "x" mark on the top-right of the modal window or just click outside of it to close it.
 
-After that come the other basic information of a person, including gender, status, occupation, and birth and death years. The age of a person is automatically determined as soon as at least years are set for both birth and death. Note that we consider the Japanese [*kazoedoshi* 数え年](https://en.wikipedia.org/wiki/East_Asian_age_reckoning#Japan) for age.
+#### Gender, Status, Occupation, Religion
+
+After that come the other basic information of a person, including gender, status, occupation and religious affiliation.
+
+Statuses (at birth) are displayed in an hierarchical fashion. The top levels of any status category are not selectable. Therefore, the 百姓 Villager category cannot be selected directly, but instead a sub-cateory has to be chosen. The available statuses are:
+
+* 不明 Unknown
+  * 不明 Unknown
+* 公家 Noble house
+  * 不明 Unknown
+  * 公卿・公家・貴族 Aristocrat
+  * 門跡 Aristocratic Buddhist abbot
+  * 下級官人 Low-ranking court official
+  * 公家奉公人 Noble house retainer/dependent
+* 武家 Warrior house 
+  * 不明 Unknown
+  * 武家 Warrior 
+  * 家来・家臣 Warrior retainer/vassals/dependent)
+  * 武家奉公人 Warrior house servant
+  * 郷士 Rural warrior
+  * 浪人 Rōnin/other
+  * 下人、下男、下女 Servant
+* 百姓 Villager 
+  * 不明 Unknown
+  * 村役人 Village official
+  * 村人・本百姓 Land-owning villager 
+  * 小作人・水呑百姓 Tenant farmer
+  * 被官百姓 Bound servant
+  * 下人、下男、下女 Servant
+* 町人 Townspeople
+  * 不明 Unknown
+  * 町役人 Town official
+  * 本町人・町衆 Land-owning townspeople
+  * 借家人 Tenant
+  * 奉公人 、下人、下男、下女 Servant 
+  * 無宿 Unregistered person
+* 宗教者 Religious profession
+  * 不明 Unknown
+  * 僧侶 Buddhist cleric 
+  * 神職 Shrine priest 
+  * キリスト教聖職者 Christian cleric  
+  * 修験者 Mountain ascetic
+  * 民間宗教者 Other religionist
+* 他 Others
+  * 被差別民 Outcast 
+  * 他 Other
+  
+The following occupations can be chosen for a person:
+
+* 不明 Unknown
+* 農民 Farmer
+* 商人 Merchant
+* 工人・職人 Artisan
+* 学者 Scholar
+* 芸人・芸者・遊女 Performing artist/entertainer; incl. sumo, actor, courtesan
+* 医者 Physician
+* 文学者 Writer/poet 
+* 芸術家 Visual artist
+* 師匠 Teacher, incl. martial arts, shogi/go, tea, military strategy
+* 当道座 Member of the guild of blind
+* 教員 Teacher
+
+Lastly, religious affiliations are structured hierarchically as well. In contrast to statuses, however, it is possible to select the top-level categories as well. Therefore, the list of available religious affiliations looks like this:
+
+* 不明 Unknown
+* トップ・レベル Top level
+  * キリスト教 Christianity
+  * 新宗教（日本） Jap. New Religions
+  * 仏教 Buddhism
+  * 神道 Shintō
+  * イスラーム Islam
+  * ユダヤ教 Judaism
+  * ヒンドゥー教 Hinduism
+  * その他 Other
+* キリスト教 Christianity 
+  * カトリック Catholic
+  * プロテスタント Protestant
+  * 正教会 Orthodox
+  * その他 Other
+* 仏教 Buddhism
+  * 天台宗 Tendai
+  * 真言宗 Shingon
+  * 浄土宗 Pure Land
+  * 浄土真宗 True Pure Land
+  * 禅宗 Zen
+  * 日蓮宗 Nichiren
+  * その他　Other
+
+Note that status, occupation, and religious affiliation currently do not account for fluidity (e.g. a person changing his/her occupation). We are currently working on ways to adress this in the future.
+
+#### Birth and Death Dates, Age
+
+The age of a person is automatically determined as soon as at least years are set for both birth and death. Note that we consider the Japanese [*kazoedoshi* 数え年](https://en.wikipedia.org/wiki/East_Asian_age_reckoning#Japan) for age.
 
 Regarding dates, each finer unit is blocked unless the next higher unit has a value other than "[Unknown]". This means that you will first have to select the era (or 年号) of the date before you can select a year; you have to select a year before you can select a month, and so on. The era list includes starting years (in Western calendar) for each era as a quick pointer.
 
 The intercalary (or 閏) checkbox for dates is intended to be applied to actual intercalary months, not to dates in a year that happen to have an intercalary month. So, for example, if there are two dates, 天保1年3月4日 and 天保1年閏3月4日, the first would be entered by selecting 3月4日 without checking the intercalary checkbox, and only the second one would be selected with checking the intercalary box. It is not meant to be selected by virtue of the year 天保1年 having an intercalary month; the checkbox is supposed to be only selected for one month of that year (namely, the actual intercalary month).
 
 ![Add person 3](../img/add-person-3.png)
+
+#### Origin
+
+You can also select either the birthplace of a person or an associated place of residence. Entering this information is a two-step process. First, you have to select the geographical region appropriate for that person:
+
+* [未詳] [Unknown]
+* 日本 Japan
+* 中国 China
+* 朝鮮・韓国 Korea
+* 琉球諸島 Ryūkyū Islands
+* アジア（蝦夷等） Other Asian countries (incl. Ezo)
+* ヨーロッパ Europa
+* アメリカ州 Americas
+* その他 Other
+
+Depending on the selected region, different places and place categories become available. You can either leave the top level category set to the default value of 全部 All or specify a specific sub-category. Just like searching for persons, simply enter a name and select the corresponding place. If multiple results are available, you can check the selected place on the map on the right:
+
+![Add person 4](../img/add-person-4.png)
+
+The field "Other" can be used either when a place to be entered cannot be found (in this case, the place won't be shown on any maps) or if you want to specify the exact address.
+
+For Japan, the data we use comes from the [歴史地名データセット](https://www.nihu.jp/ja/publication/source_map). Please refer to their documentation for an overview of available place categories. For the remaining regions, we are currently working on integrating the [GeoNames gazetteer](http://download.geonames.org/export/dump/) into our database.
+
+#### Sources
 
 Lastly, please select the source you have used to gather the information on this person. You can search or scroll through the the dropdown of sources to see whether it is already present or not:
 
@@ -167,11 +289,13 @@ The relation will now be shown in the table at the bottom.
 
 ![Add kinship 3](../img/add-kinship-3.png)
 
-You can additionally leave a comment for any specific relation, e.g. if someone has multiple wives, you could use the comment attribute to specify "second wife" as a comment for a "husband of"-relation.
+Note that when selecting the relation, or afterwards, you can specify a source as well. The source is optional and for simplicity's sake, this is limited to one source per relation.
+
+You can additionally leave a comment for any specific relation, e.g. you could use the comment attribute to specify when somebody was adopted.
 
 Once you save this person, the kinship entry will be added to the database.
 
-Note that any complementary relation gets automatically created, so you do not need to do that yourself. For example, since we added the relation that Tanaka Ichirō is the son of Tanaka Keitei, after saving the new person entry the relation that Tanaka Keitei is the father of  Tanaka Ichirō gets automatically added as well.
+Note that any complementary relation gets automatically created, so you do not need to do that yourself. For example, since we added the relation that Tanaka Ichirō is the son of Tanaka Keitei, after saving the new person entry the relation that Tanaka Keitei is the father of Tanaka Ichirō gets automatically added as well.
 
 ### Non-kinship relations<a name="non-kinship-relations"></a>
 
@@ -200,11 +324,11 @@ The available non-kinship relations are as follows:
 * の雇用者 employer of
 * の被雇用者 employee of
 
-The selection of these relations works the same way as for kinship relations. Similar to kinship relations, you can leave a comment as well.
+The selection of these relations works the same way as for kinship relations. Similar to kinship relations, you can select a source and leave a comment as well.
 
 ### Important notice
 
-Soon, we will allow for associating a source to a (non-)kinship relation. For simplicity's sake, this will be limited to one source per relation. Furthermore, we are thinking about adding dates to (non-kinship) relations. We will update this user guide as soon these changes have been implemented.
+Soon, we will allow for adding dates to (non-)kinship relations. We will update this user guide as soon these changes have been implemented.
 
 <br>
 
@@ -220,7 +344,11 @@ All of the above holds for editing kinship and non-kinship relations for already
 
 In order to delete a person, you have to click the trash box button on the right of a person entry in the front table. Note that you can only delete persons you have access rights to; in most cases, these are persons you have created with your account.
 
-Deleting a person requires you to confirm the process. Once you accept the prompt, the person will be deleted. Along with the person entry, all associated kinship and non-kinship relations get deleted. Furthermore, all source attributions for that person get removed from the database as well. Lastly, in all events that deleted person participated in, that person's ID will be replaced by the __[不明] [Unknown]__ entity.
+Deleting a person requires you to confirm the process:
+
+![Deletion prompt](../img/delete-prompt.png)
+
+Once you accept the prompt, the person will be deleted. Along with the person entry, all associated alternative names, kinship relations, and non-kinship relations get deleted. Furthermore, all source attributions for that person get removed from the database as well. Lastly, in all events that deleted person participated in, that person's ID will be replaced by the __[不明] [Unknown]__ entity.
 
 ---
 
