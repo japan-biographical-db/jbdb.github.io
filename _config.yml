@@ -21,7 +21,10 @@ navbar-links:
   Visualization Suite:
     - Settings: "vissettings"
     - Visualizations: "visualizations"
-  Project home: "https://network-studies.org/#!/"
+  GIS Suite:
+    - Settings: "gissettings"
+    - GIS: "gis"
+  Project home: "https://jbdb.jp/#!/"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
