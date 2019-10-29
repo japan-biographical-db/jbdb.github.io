@@ -15,7 +15,7 @@ subtitle: Settings
 
 ## Intro
 
-This page covers the functionality of the [visualization suite of the JBDB](https://jbdb.jp/#!/vissuite/front) and the different ways these visualizations can be generated. When entering this view, you will be presented with the following settings page:
+This page covers the functionality of the [visualization suite of the JBDB](https://jbdb.jp/#/vissuite/front) and the different ways these visualizations can be generated. When entering this view, you will be presented with the following settings page:
 
 ![Vissettings](../img/vissettings.png)
 
@@ -68,7 +68,7 @@ The finer selection works differently than for events. If you select (non-)kinsh
 
 ![Vissettings 6](../img/vissettings-6.png)
 
-The slider allows you to set the maximal distance from the _seed persons_ of related persons. 1 indicates that only people directly related to the _seed persons_ are considered. For example, if we are interested in a family tree for Rai Shunsui, setting the distance to 1 would only include the persons with whom Rai Shunsui has kinship relations (as seen when displaying [his information page](https://jbdb.jp/#!/jbdb/database/person/0)).
+The slider allows you to set the maximal distance from the _seed persons_ of related persons. 1 indicates that only people directly related to the _seed persons_ are considered. For example, if we are interested in a family tree for Rai Shunsui, setting the distance to 1 would only include the persons with whom Rai Shunsui has kinship relations (as seen when displaying [his information page](https://jbdb.jp/#/database/person/0)).
 
 However, setting the distance to 2 now also considers persons with whom the related people of Rai Shunsui are related, even if they are not directly related to him. Similarly, increasing the distance will widen the scope of the resulting visualization.<sup id="a3">[3](#f3)</sup>
 
@@ -88,7 +88,11 @@ After determining what to visualize, we can concentrate on some means of changin
 
 ![Vissettings 7](../img/vissettings-7.png)
 
-The selected attribute allows to show or hide these specific groups from the visualization in the [visualization view](https://japan-biographical-db.github.io/visualizations). Therefore, if you select "Gender" you can choose to only display all female persons in a network, or if you select "Occupation", you can choose to show all persons except scholars.
+Grouping results in persons with the same attribute to be shown in the same color (e.g. all artisans are red, all merchants are green etc.). The colors are generated randomly, so do not be surprised if the coloring of nodes changes even if the setting stays the same. Also note that if a person has an associated image, the node will not be colored but instead display the image.
+
+The selected attribute further allows to show or hide these specific groups from the visualization in the [visualization view](https://japan-biographical-db.github.io/visualizations). Therefore, if you select "Gender" you can choose to only display all female persons in a network, or if you select "Occupation", you can choose to show all persons except scholars.
+
+---
 
 The next selection of settings are fairly intuitive as well. **Note**, however, that these settings are not available when you base your visualization on (non-)kinship relations:
 
@@ -104,7 +108,9 @@ Selecting the previous two options thus looks as follows:
 
 ![Vissettings 9](../img/vissettings-9.png)
 
-The last additional setting that is available for all visualizations based on events is "Show unconnected nodes in graph". This setting is available for all ways of selecting _seed persons_ _except_ "Select by name". Therefore, if the _seed persons_ are determined by a source you select, it could happen that some of the _seed persons_ have no connection in the database. Per default, any person without connection is not shown in the visualization; however, if you expressly wish to display even those singleton persons, you can do so by enabling this option.
+---
+
+The last additional setting that is available for all visualizations based on events is "Show unconnected nodes in graph". This setting is available for all ways of selecting _seed persons_ **_except_** "Select by name". Therefore, if the _seed persons_ are determined by a source you select, it could happen that some of the _seed persons_ have no connection in the database. Per default, any person without connection is not shown in the visualization; however, if you expressly wish to display even those singleton persons, you can do so by enabling this option.
 
 **Note** that this option is mutually exclusive with some of the above-mentioned three options:
 
@@ -117,7 +123,7 @@ If you select _seed persons_ by name or by source, additional settings specific 
 
 ![Vissettings 10](../img/vissettings-10.png)
 
-Enabling this will discard persons not in the _seed persons_ list. This is useful if you are only interested in the interactional network of just the persons you select.
+Enabling this will discard persons not in the _seed persons_ list. This is useful if you are only interested in the intra-network of the persons you selected.
 
 ---
 
@@ -147,6 +153,18 @@ This section presents screenshots of networks resulting from different settings 
 ### Network of Rai Shunpū and Rai Shizu, based on meetings, group highlighting by gender, intensity of connections, importance of persons (degree centrality), time slider
 
 ![Vis example 2](../img/vis-example-2.png)
+
+### Network of Rai Shunsui, based on kinship relations, maximal distance 1, group highlighting by gender
+
+![Vis example 3](../img/vis-example-3.png)
+
+### Network of merchants, based on all events, group highlighting by occupation, importance of persons, time slider
+
+![Vis example 4](../img/vis-example-4.png)
+
+### Network of people from source "諸家人名江戸方角分", based on all events, group highlighting by status, show unconnected nodes
+
+![Vis example 5](../img/vis-example-5.png)
 
 ---
 
