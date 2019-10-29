@@ -61,7 +61,7 @@ Before we turn our attention to the kinship and non-kinship relations, however, 
 
 #### Names
 
-The name of a person is the minimal information you need to provide in order to create an entry. Note, however, that all basic name information are required, even when a certain variant (e.g. kanji) is not known or applicable. In these cases, it suffices to simply duplicate the name variant that is known. For example, if you enter a person whose name is _しず Shizu_, but the kanji of that name are not known, simply type place _しず_ into the kanji column as well.
+The name of a person is the minimal information you need to provide in order to create an entry. Note, however, that all basic name information are required, even when a certain variant (e.g. kanji) is not known or applicable. In these cases, it suffices to simply duplicate the name variant that is known. For example, if you enter a person whose name is _しず Shizu_, but the kanji of that name are not known, simply type _しず_ into the kanji column as well.
 
 After entering the person's main name in kanji, furigana, and romaji, you can proceed to enter additional names that person was known by. Simply click on the "Add other names" button and the following modal window will appear:
 
@@ -88,7 +88,7 @@ You can enter as many alternative names as you want. They will be shown in a tab
 
 The table allows you to remove or edit any alternative name. By clicking on an underlined cell, you can directly edit any name in the table. Note, however, that in order for edits to be correctly saved, you have to click outside the cell again once you are finished editing.
 
-Once you are done, you can either click the "x" mark on the top-right of the modal window or just click outside of it to close it.
+Once you are done, you can either click the "x" mark on the top-left of the modal window or just click outside of it to close it.
 
 #### Gender, Status, Occupation, Religion
 
@@ -215,11 +215,11 @@ For Japan, the data we use comes from the [歴史地名データセット](https
 
 #### Sources
 
-Lastly, please select the source you have used to gather the information on this person. You can search or scroll through the the dropdown of sources to see whether it is already present or not:
+As the last piece of information, please select the source(s) you have used to gather the information on this person. You can search or scroll through the the dropdown of sources to see whether they are already present or not:
 
 ![Select source](../img/select-source.png)
 
-If the source(s) you have used is/are not present, please make sure to [add a source entry](https://japan-biographical-db.github.io/sources/adding-a-source) first in the [add-source view](https://jbdb.jp/#!/jbdb/database/add-source). You can simply open a new browser tab for that and head to the sources view.<sup id="a3">[3](#f3)</sup>
+If the source(s) you have used is/are not present, please make sure to [add a source entry](https://japan-biographical-db.github.io/sources/adding-a-source) first in the [add-source view](https://jbdb.jp/#/database/add-source). You can simply open a new browser tab for that and head to the sources view.<sup id="a3">[3](#f3)</sup>
 
 Additionally, you can enter the page numbers of the selected source(s) and a general comment on this person or the entry:
 
@@ -227,7 +227,7 @@ Additionally, you can enter the page numbers of the selected source(s) and a gen
 
 ### Kinship relations<a name="kinship-relations"></a>
 
-As we discussed, kinship relations relations become accessible once a person's name has been entered. Clicking on the navigational tab "Kinship relations" presents you with a search form and an empty table:
+As we have discussed, kinship relations relations become accessible once a person's name has been entered. Clicking on the navigational tab "Kinship relations" presents you with a search form and an empty table:
 
 ![Add kinship 1](../img/add-kinship-1.png)
 
@@ -284,7 +284,7 @@ Once you save this person, the kinship entry will be added to the database.
 
 Note that any complementary relation gets automatically created, so you do not need to do that yourself. For example, since we added the relation that Tanaka Ichirō is the son of Tanaka Keitei, after saving the new person entry the relation that Tanaka Keitei is the father of Tanaka Ichirō gets automatically added as well.
 
-Determined by gender automatically. Note that if gender is set to "Unknown or other", we default to treating this as "Male" for kinship relations, so that we are consistent in assigning complementary relations (PLUS, generic "child of" does not exist.)
+For complementary relations that are gender-dependent (e.g. brother/sister), the appropriate relation is determined automatically by the gender you set in the "Basic information" tab. Note that if gender is set to "Unknown or other", we default to treating this as "Male" for kinship relations, so that we are consistent in assigning complementary relations.<sup id="a4">[4](#f4)</sup>
 
 ### Non-kinship relations<a name="non-kinship-relations"></a>
 
@@ -331,9 +331,11 @@ All of the above holds for editing kinship and non-kinship relations for already
 
 ## Deleting a person<a name="deleting-a-person"></a>
 
-In order to delete a person, you have to click the trash box button on the right of a person entry in the front table. Note that you can only delete persons you have access rights to; in most cases, these are persons you have created with your account.
+In order to delete a person, you have to click the red trash box button on the right of a person entry in the front table:
 
-Deleting a person requires you to confirm the process:
+![Delete person](../img/delete-person.png)
+
+Note that you can only delete persons you have access rights to; in most cases, these are persons you have created with your account. Deleting a person requires you to confirm the process:
 
 ![Deletion prompt](../img/delete-prompt.png)
 
@@ -343,7 +345,8 @@ Once you accept the prompt, the person will be deleted. Along with the person en
 
 <b id="f1">1.</b> You will also notice that there is an asterisk (*) after some, but not all, of the fields. An asterisk indicates that a field __must__ be filled out in order to correctly save the person in the database. Note that fields that default to a value (such as "不明 Unknown") can be left untouched if the necessary information is not available or not to be entered.[↩](#a1)
 
-
 <b id="f2">2.</b> Please note that the country/region selection represents modern geopolitical entities.[↩](#a2)
 
 <b id="f3">3.</b> Depending on your browser and/or cookie settings, however, you might have to log-in again.[↩](#a3)
+
+<b id="f4">4.</b> This is due to the fact that we do not have a generic "child of" relation.[↩](#a4)
