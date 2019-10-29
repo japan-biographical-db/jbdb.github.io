@@ -18,7 +18,7 @@ subtitle: Persons
 
 ## Searching for a person<a name="searching-a-person"></a>
 
-This section covers some basics on the [persons view of the database](https://network-studies.org/#!/jbdb/database/persons) and the different ways the persons can be filtered.
+This section covers some basics on the [persons view of the database](https://jbdb.jp/#/database/persons) and the different ways the persons can be filtered.
 
 The most straight-forward way of searching for persons is using the search box on the top-left:
 

@@ -5,7 +5,7 @@ subtitle: A User's Guide
 use-site-title: true
 ---
 
-This site contains the official, open<sup id="a1">[1](#f1)</sup> user guide for the [Japan Biographical DB](https://jbdb.jp/#!/) (aka JBDB). At the core, the JBDB is a PostgreSQL relational database aiming to provide information on historical Japanese and Japan-related individuals and their personal, political, and social networks. A modern, JavaScript-based web application is used to access, manipulate, and visualize the contents of the database. 
+This site contains the official, open<sup id="a1">[1](#f1)</sup> user guide for the [Japan Biographical DB](https://jbdb.jp) (aka JBDB). At the core, the JBDB is a PostgreSQL relational database aiming to provide information on historical Japanese and Japan-related individuals and their personal, political, and social networks. A modern, JavaScript-based web application is used to access, manipulate, and visualize the contents of the database. 
 
 [comment]: # (Maybe at some point add a page specifying the technical details of the application and everything else?)
 
