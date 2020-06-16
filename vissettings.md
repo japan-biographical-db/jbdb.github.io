@@ -142,7 +142,7 @@ Lastly, the third setting combines the above two mechanisms. This is the most st
 
 Therefore, if you again select a diary for example, the network will show all persons whose biographical information comes from the diary and the connections between those persons will also only be based on interactions described in the diary.
 
-## Examples<a name="examples"></a>
+## Examples (as of October 2019)<a name="examples"></a>
 
 This section presents screenshots of networks resulting from different settings combinations. If you are interested in how to interact with the networks and see what you can do with them, please refer to the [visualization view page](https://japan-biographical-db.github.io/visualizations).
 
