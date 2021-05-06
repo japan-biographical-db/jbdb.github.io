@@ -19,11 +19,11 @@ The user guide is accessible at all times from the application. In the header, t
 <img width="200px" src="https://japan-biographical-db.github.io/img/user-guide-btn.png">
 </p>
 
-Clicking on this symbol will either open up a specific page of the user guide (depending on where you are) or the front page (this page). Note that currently only logged-in users have access to this feature as the user guide is still work-in-progress.
+Clicking on this symbol will either open up a specific page of the user guide (depending on where you are) or the front page (this page).
 
 This site will be continuously updated to reflect the latest changes and functionalities that the JBDB and its associated web application provide. If you have any questions or suggestions, or if you notice any bugs, you are welcome to contact me under the following e-mail address: <support@japanese-history.org>. Along with the link to the GitHub repository of this site, you will also find it in the footer.
 
-Heidelberg, November 2019<br>
+Heidelberg, May 2021<br>
 Leo Born 
 
 ---
