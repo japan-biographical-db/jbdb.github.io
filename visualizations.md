@@ -99,6 +99,12 @@ and 3) a detailed breakdown for exchanges:
 
 ![Vis event distriution 3](../img/vis-event-dist-3.png)
 
+---
+
+The next part of the settings menu allows you to select the minimum degree of a person to show larger than persons with a lower degree. Since we did not set the setting to show the importance of persons, this is the basic way of separating more important from less important persons based on degree centrality at a glance. Thus, if we set the threshold to ten, for example, only people with ten or more connections are shown large:
+
+![Vis degree 1](../img/vis-degree-1.png)
+
 <!--Clustering is not available when time slider is enabled-->
 
 ---
