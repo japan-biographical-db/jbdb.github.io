@@ -8,8 +8,11 @@ subtitle: Visualizations
 
 1. [General canvas](#visualizations)
 2. [Basic overlay window](#basic-overlay)
-2. [Settings menu](#settings)
-3. [Search menu](#search)
+3. [Settings menu](#settings)
+4. [Search menu](#search)
+5. [Time slider](#time)
+6. [Centrality metrics](#centrality)
+7. [(Non-)kinship networks](#kinship)
 
 <br>
 
@@ -18,6 +21,26 @@ Once you have selected the criteria by which you want to generate an interactive
 ## General canvas<a name="visualizations"></a>
 
 ![Vis canvas 1](../img/vis-canvas-1.png)
+
+There are three sets of buttons on the canvas. Starting on the top left, there are the two buttons to access the [settings menu](#settings) and the [search menu](#search):
+
+![Vis buttons 1](../img/vis-buttons-1.png)
+
+Next, on the bottom left, there are three buttons and some statistics on the network:
+
+![Vis buttons 2](../img/vis-buttons-2.png)
+
+The buttons, from left to right, are for: resetting the layout (useful if you have moved a lot of nodes around and want the start layout), saving the network (just nodes and edges as shown/highlighted) as a PNG file (a modal opens where you specify the file name), and for displaying the network in fullscreen mode.
+
+The statistics inform you about the number of nodes, edges, and clusters **that are currently displayed**. This is important as these numbers will change depending on how you manipulate the network (e.g. hiding all men, see below). Density is a percentage of actual edges to the number of maximally possible edges, i.e. if a network has connections for every pair of nodes, it would be maximally dense, whereas a network with no connections at all is not dense. The clustering coefficient measures the degree to which nodes cluster around each other. Technically, this is an [approximation of the global clustering coefficient](https://i11www.iti.kit.edu/_media/projects/spp1126/files/sw-acct-05.pdf).
+
+The last group of buttons appears on the bottom right:
+
+![Vis buttons 3](../img/vis-buttons-3.png)
+
+They serve to zoom in (plus sign) or out (minus sign) of the network, although the same effect can be achieved using a scroll wheel on a mouse. The top button simply centers the network on the canvas.
+
+---
 
 Generally, the network reacts both when you hover your mouse over elements and when you click on elements (either nodes or edges). Hovering over a node highiights its associated edges:
 
@@ -101,12 +124,47 @@ and 3) a detailed breakdown for exchanges:
 
 ---
 
-The next part of the settings menu allows you to select the minimum degree of a person to show larger than persons with a lower degree. Since we did not set the setting to show the importance of persons, this is the basic way of separating more important from less important persons based on degree centrality at a glance. Thus, if we set the threshold to ten, for example, only people with ten or more connections are shown large:
+The next part of the settings menu contains a slider and allows you to select the minimum degree of a person to show larger than persons with a lower degree. Since we did not set the setting to show the importance of persons, this is the basic way of separating more important from less important persons based on degree centrality at a glance. Thus, if we set the threshold to ten, for example, only people with ten or more connections are shown large:
 
 ![Vis degree 1](../img/vis-degree-1.png)
 
-<!--Clustering is not available when time slider is enabled-->
+---
+
+The middle part of the menu contains lists of mibun (statuses) and occupations by which you can cluster persons. This is useful if you are interested in more macro-level analyses of connections, e.g. to how many land-owning villagers were there and to whom were they conncted:
+
+![Vis cluster 1](../img/vis-cluster-1.png)
+
+Clusters are shown as star-shaped nodes and you can cluster by multiple attributes (either multiple statues, occupations, or a mix):
+
+![Vis cluster 2](../img/vis-cluster-2.png)
+
+A cluster can be disassembled by either clicking on the attribute in the list again (active attributes are indicated by a check mark) or by clicking "Open cluster" in the overlay window of the resulting cluster. This will automatically trigger "Enable physics simulation" (see above) to animate the cluster opening so that the contained nodes can smoothly be re-integrated into the overall layout of the network:<sup id="a2">[2](#f2)</sup>
+
+![Vis cluster 3](../img/vis-cluster-3.png)
+
+**Note that due to the complexities introduced by the [time slider](#time), clustering is not available when the time slider is enabled.**
+
+---
+
+The last part of the settings menu allows you to hide or show nodes based on the attributes by which we selected group highlighting at the beginning (gender, per default). This, using the "Select groups" list, you could only retain all women in the network by hiding men (shown groups are indicated by the check mark):
+
+![Vis group 1](../img/vis-group-1.png)
+
+For easier identifiability, groups are randomly associated with distinct colors, which are shown next to the group name in the list. To make men re-appear in the network, click on "Male" in the list again.
+
+Note that any of the operations discussed above (clustering, group selection) appropriately updates the network statistics in the bottom-left corner of the canvas (shown above). That is, hiding men, for example now shows this:
+
+![Vis group 2](../img/vis-group-2.png)
+
+## Search menu<a name="search"></a>
+
+## Time slider<a name="time"></a>
+
+## Centrality metrics<a name="centrality"></a>
+
+## (Non-)kinship network<a name="kinship"></a>
 
 ---
 
 <b id="f1">1.</b> Since some elements on the canvas are dependent on the underlying network settings, we will also show different network settings and their effects on the interaction.[↩](#a1)
+<b id="f2">2.</b> This may result in the network spinning around for a while, which causes the network to look different than before (see screenshots).[↩](#a2)
