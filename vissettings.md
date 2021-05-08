@@ -6,10 +6,11 @@ subtitle: Settings
 
 # Contents
 
-1. [Who to visualize?](#who-to-visualize)
-2. [What to visualize?](#what-to-visualize)
-3. [How to visualize?](#how-to-visualize)
-4. [Examples](#examples)
+1. [Summary: Possible Combinations and Effects on Visualization](#summary)
+2. [Who to visualize?](#who-to-visualize)
+3. [What to visualize?](#what-to-visualize)
+4. [How to visualize?](#how-to-visualize)
+5. [Examples](#examples)
 
 <br>
 
@@ -21,7 +22,21 @@ This page covers the functionality of the [visualization suite of the JBDB](http
 
 Broadly speaking, there are three important sections to the settings view: the first concerns the persons one is interested in visualizing ([who to visualize?](#who-to-visualize)); the second is about what to base the visualizations on ([what to visualize?](#what-to-visualize)); and the third is concerned with how the visualizations should look in the end ([how to visualize?](#how-to-visualize)).
 
-This section is therefore structured in a way to reflect these three broad questions.
+While this section is therefore structured in a way to reflect these three broad questions, for the impatient we will provide a brief summary of which settings can or cannot be combined with other settings first.
+
+## Summary: Possible Combinations and Effects on Visualization<a name="summary"></a>
+
+For explanations of the visualization canvas, please refer [to the other page](https://japan-biographical-db.github.io/visualizations/).
+
+* If "All" persons should be visualized, (non-)kinship relations **can not be selected**
+* Any further setting, further source-specific setting, or further person-specific setting **can not be selected** for (non-)kinship relations
+* If you "Select by name", "Show unconnected nodes in graph" **is disabled**
+* "Show unconnected nodes in graph" is **incompatible** with "Visualize importance of persons" and "Add time slider"
+    * Conversely, selecting "Visualize importance of persons" disables "Show unconnected nodes in graph"
+    * Conversely, selecting "Add time slider" disables "Show unconnected nodes in graph"
+* "Add time slider" **disables clustering** in the visualization canvas
+* "Visualize importance of persons" **replaces** the default degree slider in favor of a more fine-grained selection of centrality metrics in the settings menu of the visualization canvas
+    * Consequently, choosing this setting additionally shows centrality values for each person in the overlay window
 
 ## Who to visualize?<a name="who-to-visualize"></a>
 
