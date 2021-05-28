@@ -70,7 +70,7 @@ Sometimes there are multiple equally short paths between nodes; to highlight all
 
 ### Connecting events
 
-The network as shown is based on events (see above). In order to gain a better understanding aboud which events are underlying the connections, you can refer to the "Connected to" list in the lower part of the overlay window. It shows how many persons the selected person is connected with (here, 95) and lists them with the number of events connecting them in brackets (e.g. Rai Shunsui has 22 events together with Hayashi Kenryō). The cross next to a person's name allos you to center the canvas view on that person. Clicking on a person's name, however, opens a modal window showing a table of the events underlying the connection:
+The network as shown is based on events (see above). In order to gain a better understanding about which events are underlying the connections, you can refer to the "Connected to" list in the lower part of the overlay window. It shows how many persons the selected person is connected with (here, 95) and lists them with the number of events connecting them in brackets (e.g. Rai Shunsui has 22 events together with Hayashi Kenryō). The cross next to a person's name allos you to center the canvas view on that person. Clicking on a person's name, however, opens a modal window showing a table of the events underlying the connection:
 
 ![Vis event modal 1](../img/vis-event-modal-1.png)
 
@@ -96,7 +96,7 @@ Note that we selected Ikunosuke, then clicked on "Lock network" and then re-arra
 
 ### Person distributions
 
-The other two options of this part of the settings menu allow you to display distributional information on the network. The first such distribution is concerned with the persons. It is split into three tabs, showing information persons' 1) gender:
+The other two options of this part of the settings menu allow you to display distributional information on the network. The first such distribution is concerned with the persons. It is split into three tabs, showing information on persons' 1) gender:
 
 ![Vis person distriution 1](../img/vis-person-dist-1.png)
 
@@ -167,4 +167,5 @@ Note that any of the operations discussed above (clustering, group selection) ap
 ---
 
 <b id="f1">1.</b> Since some elements on the canvas are dependent on the underlying network settings, we will also show different network settings and their effects on the interaction.[↩](#a1)
+
 <b id="f2">2.</b> This may result in the network spinning around for a while, which causes the network to look different than before (see screenshots).[↩](#a2)
